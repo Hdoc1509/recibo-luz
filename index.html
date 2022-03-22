@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recibo Luz</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+	<form action="#" id="form-luz">
+		<fieldset>
+			<legend>Recibo de Luz</legend>
+			<span>
+				<label for="actual">Consumo Actual:</label>
+				<input type="number" name="actual" id="actual" min="0" step="any" required>
+			</span>
+
+			<span>
+				<label for="anterior">Consumo anterior:</label>
+				<input type="number" name="anterior" id="anterior" min="0" step="any" required>
+			</span>
+
+			<span>
+				<label for="costo-kw">Costo Kw:</label>
+				<input type="number" name="costo_kw" id="costo-kw" min="0" step="any" required>
+			</span>
+
+			<span>
+				<label for="alumbrado">Alumbrado:</label>
+				<input type="number" name="alumbrado" id="alumbrado" min="0" step="any" required>
+			</span>
+
+			<span>
+				<label for="cargo-fijo">Cargo Fijo:</label>
+				<input type="number" name="cargo_fijo" id="cargo-fijo" min="0" step="any" required>
+			</span>
+
+			<span>
+				<label for="reposicion">Reposición:</label>
+				<input type="number" name="reposicion" id="reposicion" min="0" step="any" required>
+			</span>
+
+			<span>
+				<label for="ley-luz">Ley Luz:</label>
+				<input type="number" name="ley_luz" id="ley-luz" min="0" step="any" required>
+			</span>
+
+			<button id="calc-amount">Calcular</button>
+
+			<span>
+				<label for="resultado">Monto a pagar:</label>
+				<input type="text" name="resultado" readonly>
+			</span>
+		</fieldset>
+	</form>
+</div>
+
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
